@@ -3,26 +3,34 @@
 body{
     background-color:rgb(149, 231, 237);
     background-image: url(bg.jpg);
-}
+    padding: 7%;
+    position: relative;
 
+}
 
 .block {
     position: relative;
     background-color: black;
     float: left;
-	width: 40%;
-	margin: 2%;
-	border: 1px solid #ccc;
-	text-align: center;
+    margin: 2%;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 5%;
+    left: 13%;
+}
+
+.block a{
+  padding: 5px;
 }
 
 .block img {
     opacity: 1;
     display: block;
-    width: 100%;
-    height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    position: relative;
+    object-fit: cover;
+    border-radius: 5%;
 }
 .middle {
     transition: .5s ease;
@@ -55,9 +63,10 @@ body{
     color:#060101;
     padding:10px 10px;
     border:none;
+    border-radius: 12px;
 }
 .button:hover{
-    background:rgb(205, 15, 142);
+    background:rgb(247, 187, 147);
     color:#fff;
 }
 
@@ -66,7 +75,7 @@ body{
 	font-size: 20px;
 }
 
-.trail { /* className for the trail elements */
+.trail {
     position: absolute;
     height: 6px; width: 6px;
     border-radius: 3px;
