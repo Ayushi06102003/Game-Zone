@@ -13,19 +13,14 @@
   <li>JavaScript</li>
 </ul>
 
-#### Steps to Use:
+# Set up required to run
+1. Clone the repository.
 
----
+2. Move to project directory.
 
-- Download or clone the repository
+3. Open index.html with Chrome or any browser.
 
-```
-git clone https://github.com/Ayushparikh-code/Web-dev-mini-projects.git
-```
-
-- Go to the directory
-- Run the index.html file
-- Start Playing!!
+4. Start Playing.
 
 <h3> ScreenShots </h3> 
 <img width="889" alt="tictactoe-light" src="https://user-images.githubusercontent.com/64218887/124368601-4070f000-dc80-11eb-8d0d-4c7894491af6.png">
