@@ -3,6 +3,9 @@
 <head>
    
     <title>Gaming website</title>
+    <script  src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"
+  ></script>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <style type="text/css">
         #popup {
@@ -29,12 +32,6 @@
         button {
           margin-top: 20px;
         }
-
-        #main-header{
-            position: relative;
-            color: #f6f2f2;
-            text-align: center;
-        }
         
     </style>
     
@@ -42,18 +39,41 @@
 
 <link rel="stylesheet" type="text/css" href="style.css">
     
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <header id="main-header">
-        <h1 style="font-family:fantasy" text-align="center" >Game Zone</h2>
-    </header>
-    
+   
+    <nav>
+
+      <ul class="horizontal-list text-right nav-menu">
+          <li>
+              <a href="#"> Home </a>
+          </li>
+          <li>
+              <a href="#about"> About </a>
+          </li>
+          <li>
+              <a href="#contact">Contact</a>
+          </li>
+   </ul>
+  
+  </nav>
+
+
+<section class="mb75px">
+    <h1 class="section-contact-heading mb75px">
+        <span>GAME ZONE</span>
+    </h1>
+    <div class="container">
 		<div class="block">
 			<a href="#"><img src="hc.jpg"  class="image" ></a>
             <div class="middle">
-                <button type="button" onclick="showImage('hc.jpg')" style="text-decoration: none;" class= "button"> Rules </button>
+                <button type="button" onclick="showImage('cricket_rules.png')" style="text-decoration: none;" class= "button"> Rules </button>
                 <br><br>
                 <a style="text-decoration: none;" class= "button" href="Hand-Cricket/index.html">Play Now</a>
               </div>
@@ -86,7 +106,71 @@
               </div>
 			<h2 style="color: #f6f2f2;">Memory Card</h2>
 		</div>
-    
+  </div>
+</section>
+
+<section class="mb75px" id="about">
+    <h1 class="section-contact-heading mb75px">
+        <span>
+            <i class="fa-solid fa-circle-info"></i>
+        </span>
+        <span>ABOUT</span>
+    </h1>
+        <div class="contact-details">
+            <div><b>Online Games on Game Zone — Let's play</b></div>
+            <div>Game Zone has the best free online games selection and offers the most fun experience to play. We offer instant play to all our games without downloads, login, popups or other distractions. Our games are playable on desktop so you can enjoy them at home. Game developers release fun New Games on our platform on a daily basis</div>
+        </div>
+    </div>
+
+  </section>
+
+<section class="mb75px" id="contact">
+    <h1 class="section-contact-heading mb75px">
+        <span>
+            <i class="fa-solid fa-address-card" style="color: #ffffff;"></i>
+        </span>
+        <span>CONTACT</span>
+    </h1>
+        <div class="contact-details">
+            <div><b>My Address</b></div>
+            <div><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> Lucknow, India</div>
+            <div><i class="fa-solid fa-mobile-screen" style="color: #ffffff;"></i> 764763277</div>
+            <div><i class="fa-regular fa-envelope" style="color: #ffffff;"></i> gamezone56@gmail.com</div>
+        </div>
+    </div>
+    <div>
+        <ul class="horizontal-list text-center social-icons">
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+  </section>
 
         <div id="popup">
             <img id="popup-image" src="" alt="Pop-up Image">
