@@ -3,11 +3,34 @@
 <head>
    
     <title>Gaming website</title>
+    <script  src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"
+  ></script>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <style type="text/css">
-        #main-header{
-            text-align: center;
-            padding:10px;
-            color: #f6f2f2;
+        #popup {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.7);
+          z-index: 999;
+        }
+        
+        #popup-image {
+          display: block;
+          position: relative;
+          margin: 10% auto;
+          max-width: 80%;
+          max-height: 80%;
+          bottom: 12%;
+
+        }
+        
+        button {
+          margin-top: 20px;
         }
         
     </style>
@@ -16,54 +39,157 @@
 
 <link rel="stylesheet" type="text/css" href="style.css">
     
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <header id="main-header">
-        <h1 style="font-family:fantasy" >Game Zone</h2>
-    </header>
-    
+   
+    <nav>
+
+      <ul class="horizontal-list text-right nav-menu">
+          <li>
+              <a href="#"> Home </a>
+          </li>
+          <li>
+              <a href="#about"> About </a>
+          </li>
+          <li>
+              <a href="#contact">Contact</a>
+          </li>
+   </ul>
+  
+  </nav>
+
+
+<section class="mb75px">
+    <h1 class="section-contact-heading mb75px">
+        <span>GAME ZONE</span>
+    </h1>
+    <div class="container">
 		<div class="block">
-			<a href="#"><img src="hc.jpg"  class="image" ></a>
+			<a href="#"><img src="Images/hc.jpg"  class="image" ></a>
             <div class="middle">
-                <a style="text-decoration: none;" class= "button" href="#">Rules</a>
+                <button type="button" onclick="showImage('Images/cricket_rules.jpg')" style="text-decoration: none;" class= "button"> Rules </button>
                 <br><br>
                 <a style="text-decoration: none;" class= "button" href="Hand-Cricket/index.html">Play Now</a>
               </div>
 			<h2 style="color: #f6f2f2;">Hand Cricket</h2>
 		</div>
 		<div class="block">
-			<a href="#"><img src="flappybird.jpg" class="image" ></a>
+			<a href="#"><img src="Images/wordle.png" class="image" ></a>
             <div class="middle">
-                <a style="text-decoration: none;" class= "button" href="#">Rules</a>
+                <button type="button" onclick="showImage('Images/WR.jpg')" style="text-decoration: none;" class= "button"> Rules </button>
                 <br><br>
-                <a style="text-decoration: none;" class= "button" href="#">Play Now</a>
+                <a style="text-decoration: none;" class= "button" href="wordle-speedrun/index.html">Play Now</a>
               </div>
-			<h2 style="color: #f6f2f2;">Flappy Bird</h2>
+			<h2 style="color: #f6f2f2;">Wordle</h2>
 		</div>
 		<div class="block">
-			<a href="#"><img src="tic tac toe.jpg" class="image"></a>
+			<a href="#"><img src="Images/tic tac toe.jpg" class="image"></a>
             <div class="middle">
-                <a style="text-decoration: none;" class= "button" href="#">Rules</a>
+                <button type="button" onclick="showImage('Images/TTTR.jpg')" style="text-decoration: none;" class= "button"> Rules </button>
                 <br><br>
-                <a style="text-decoration: none;" class= "button" href="Tic-Tac-Toe Game/index.html">Play Now</a>
+                <a style="text-decoration: none;" class= "button" href="tic-tac-toe/index.html">Play Now</a>
               </div>
 			<h2 style="color: #f6f2f2;">Tic Tac Toe </h2>
 		</div>
 		<div class="block">
-			<a href="#"><img src="memorycard.jpg" class="image"></a>
+			<a href="#"><img src="Images/memorycard.jpg" class="image"></a>
             <div class="middle">
-                <a style="text-decoration: none;" class= "button" href="#">Rules</a>
+                <button type="button" onclick="showImage('Images/MCR.jpg')" style="text-decoration: none;" class= "button"> Rules </button>
                 <br><br>
                 <a style="text-decoration: none;" class= "button" href="Memory Card Game/mainGame.html">Play Now</a>
               </div>
 			<h2 style="color: #f6f2f2;">Memory Card</h2>
 		</div>
-    
+  </div>
+</section>
 
-    
-    
+<section class="mb75px" id="about">
+    <h1 class="section-contact-heading mb75px">
+        <span>
+            <i class="fa-solid fa-circle-info"></i>
+        </span>
+        <span>ABOUT</span>
+    </h1>
+        <div class="contact-details">
+            <div><b>Online Games on Game Zone — Let's play</b></div>
+            <div>Game Zone has the best free online games selection and offers the most fun experience to play. We offer instant play to all our games without downloads, login, popups or other distractions. Our games are playable on desktop so you can enjoy them at home. Game developers release fun New Games on our platform on a daily basis</div>
+        </div>
+    </div>
+
+  </section>
+
+<section class="mb75px" id="contact">
+    <h1 class="section-contact-heading mb75px">
+        <span>
+            <i class="fa-solid fa-address-card" style="color: #ffffff;"></i>
+        </span>
+        <span>CONTACT</span>
+    </h1>
+        <div class="contact-details">
+            <div><b>My Address</b></div>
+            <div><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> Lucknow, India</div>
+            <div><i class="fa-solid fa-mobile-screen" style="color: #ffffff;"></i> 764763277</div>
+            <div><i class="fa-regular fa-envelope" style="color: #ffffff;"></i> gamezone56@gmail.com</div>
+        </div>
+    </div>
+    <div>
+        <ul class="horizontal-list text-center social-icons">
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+  </section>
+
+        <div id="popup">
+            <img id="popup-image" src="" alt="Pop-up Image">
+          </div>
+        <script>
+            function showImage(imagePath) {
+              var popup = document.getElementById("popup");
+              var popupImage = document.getElementById("popup-image");
+              popup.style.display = "block";
+              popupImage.src = imagePath;
+            }
+        
+            document.addEventListener("DOMContentLoaded", function() {
+              var popup = document.getElementById("popup");
+              popup.addEventListener("click", function() {
+                this.style.display = "none";
+              });
+            });
+          </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 </body>
