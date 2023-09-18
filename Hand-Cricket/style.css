@@ -1,0 +1,59 @@
+/* Body */
+body {
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+/* Box for homepage */
+.box {
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+  padding: 5%;
+  position: absolute;
+  text-align: center;
+  top: 33%;
+  left: 12%;
+
+  border-radius: 20px;
+  opacity: 75%;
+}
+
+.box h3 {
+  font-size: 90px;
+  color: white;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.box h3:hover {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+.video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video {
+    width: auto;
+    height: 100%;
+  }
+}
