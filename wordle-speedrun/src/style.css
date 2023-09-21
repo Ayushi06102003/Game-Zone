@@ -5,9 +5,9 @@ body {
 
 :root {
   --default: #121213;
-  --empty: #3a3a3c;
-  --wrong: #b59f3b;
-  --right: #538d4e;
+  --empty: #6c749cf2;
+  --wrong: #620b80;
+  --right: #b33690;
 }
 
 #game {
